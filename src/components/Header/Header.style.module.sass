@@ -1,0 +1,22 @@
+@import "src/mixins/mixins"
+
+.header
+  display: flex
+  align-items: center
+  padding-top: 27px
+
+  &__logo
+    max-width: 256px
+    width: 100%
+    max-height: 73px
+    min-height: 30px
+
+  &__nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+    @include for-phone-295
+      display: none
+      margin: 0

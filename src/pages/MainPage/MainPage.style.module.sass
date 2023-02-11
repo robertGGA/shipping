@@ -1,0 +1,71 @@
+@import "src/mixins/mixins"
+@import "src/mixins/variables"
+
+.page
+  margin-top: 92px
+  display: flex
+  flex-direction: column
+
+  &__image
+    position: absolute
+    max-width: 795px
+    max-height: 505px
+    right: 0
+
+  .button
+    &__link
+      margin-top: 55px
+      @include button-submit
+      font-weight: 700
+      color: white
+      text-transform: uppercase
+
+.title
+  @include content-54
+  max-width: 807px
+
+  span
+    color: $c-submit-blue
+
+.subtitle
+  margin-top: 35px
+  max-width: 407px
+  @include content-16
+
+.services
+  display: grid
+  grid-gap: 15px
+  grid-template-rows: 250px auto 250px
+  grid-template-columns: auto auto auto
+  margin-top: 45px
+
+  &__container
+    margin-top: 192px
+    display: flex
+    flex-direction: column
+
+  &__button
+    @include button-shadow
+    padding: 24px 60px
+    width: fit-content
+    border: none
+    margin: 45px auto 0 auto
+    font-weight: 700
+    text-transform: uppercase
+
+    h3
+      @include content-18
+      color: $c-submit-blue
+      text-transform: uppercase
+
+.card
+
+  &_warehouse
+    height: 158px !important
+    width: 373px
+
+.carousel
+  margin-top: 141px
+  width: 100%
+
+

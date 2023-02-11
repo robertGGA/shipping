@@ -1,0 +1,40 @@
+@import "src/mixins/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+body {
+  margin: 0;
+  font-family: Inter, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root[data-theme="light"] {
+  --background-color: white;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #2b3e51;
+}
+
+body {
+  background: var(--background-color);
+  color: $c-default;
+}
+
+a {
+  text-decoration: none;
+  color: $c-default
+}

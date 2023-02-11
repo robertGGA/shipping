@@ -1,0 +1,46 @@
+@import "variables"
+
+@mixin row
+  display: flex
+  flex-direction: row
+
+@mixin column
+  display: flex
+  flex-direction: column
+
+@mixin font-mulish
+  font-family: 'Mulish', serif
+
+@mixin content-16
+  font-weight: 400
+  font-size: 16px
+
+@mixin content-18
+  font-weight: 600
+  font-size: 18px
+
+@mixin content-54
+  font-size: 54px
+  font-weight: 600
+  @include font-mulish
+
+@mixin for-phone-295
+  @media (max-width: 295px)
+    @content
+
+@mixin for-table-570
+  @media (max-width: 570px)
+    @content
+
+@mixin button-submit
+  padding: 24px 60px
+  background-color: $c-submit-blue
+  border-radius: 10px
+  width: fit-content
+
+@mixin button-shadow
+  background-color: $c-shadow
+  border-radius: 10px
+  color: $c-grey
+
+@mixin dark-theme

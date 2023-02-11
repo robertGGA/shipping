@@ -1,0 +1,36 @@
+@import "src/mixins/mixins"
+@import "src/mixins/variables"
+
+.card
+  display: flex
+  position: relative
+  background: white
+  box-shadow: -4px 4px 16px rgba(black, 0.1)
+  border-radius: 20px
+  height: 250px
+  min-width: 258px
+  max-width: 540px
+  width: fit-content
+  padding: 40px 0 40px 31px
+  transition: 0.3s
+  width: 100%
+
+  @include for-phone-295
+    height: 320px
+    max-width: 310px
+
+  &:hover
+    background: $c-submit-blue
+    color: white
+
+  &__title
+    font-family: 'Mulish', serif
+    font-weight: 700
+    font-size: 24px
+    max-width: 173px
+
+  &__image
+    position: absolute
+    right: 0
+    height: calc(100% - 15%)
+
